@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[10];
+	int size=5;
+	int value;
+	cout<<"Enter 5 number for the array: ";
+	for(int i=0;i<size; i++)
+	{
+		cin>>arr[i];
+	}
+	cout<<"ENTER THE NUMBER TO ADD AT THE END:";
+	cin>>value;
+	for(int i=size; i<size; i--)
+	{
+	arr[i]=arr[i-1];	
+	}
+	arr[5]=value;
+	size++;
+	cout<<"UPDATED ARRAY:";
+	for(int i=0;i<size;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+	return 0;
+}
